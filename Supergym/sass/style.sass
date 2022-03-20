@@ -1,0 +1,1532 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap')
+@font-face
+  font-family: "Bebas Neue"
+  font-weight: 400
+  src: url(../fonts/Bebas_Neue/BebasNeueRegular.woff) format("woff")
+@font-face
+  font-family: "Bebas Neue"
+  font-weight: 700
+  src: url(../fonts/Bebas_Neue/BebasNeueBold.woff) format("woff")
+
+*
+  margin: 0
+  padding: 0
+body
+  font-family: 'Roboto Condensed'
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 22px
+  color: #102654
+  text-align: left
+
+
+header
+  color: #FFFFFF
+  min-height: 658px
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg)
+  @media screen and (max-width: 940px)
+    min-height: 600px
+  @media screen and (max-width: 730px)
+    min-height: 530px
+  a
+    text-decoration: none
+    color: #FFFFFF
+  .header-wrapper
+    max-width: 1360px
+    margin: 0 auto
+    padding: 0 45px
+    @media screen and (max-width: 940px)
+      padding-right: 25px
+    @media screen and (max-width: 390px)
+      padding: 0 15px
+    .header_top
+      font-family: 'Bebas Neue'
+      padding-top: 30px
+      display: flex
+      justify-content: space-between
+      font-size: 26px
+      line-height: 26px
+      letter-spacing: 0.02em
+      min-width: 286px
+    .header_main
+      padding-top: 65px
+      display: flex
+      justify-content: space-between
+      .header_text
+        display: flex
+        flex-direction: column
+        width: 28%
+        text-align: right
+        position: relative
+        min-width: 350px
+
+        span
+          font-family: "Bebas Neue"
+          font-weight: 400
+          font-size: 49px
+          line-height: 59px
+          letter-spacing: 0.03em
+        h1
+          font-family: "Bebas Neue"
+          font-weight: 700
+          font-size: 109px
+          line-height: 109px
+          letter-spacing: 0.03em
+          max-width: 300px
+          align-self: flex-end
+        p
+          font-size: 14px
+          line-height: 150%
+          width: 123px
+          min-height: 51px
+          position: absolute
+          top: 186px
+          right: 262px
+
+        button
+          font-family: 'Roboto Condensed'
+          width: 230px
+          height: 57px
+          font-size: 12px
+          border: 4px solid #FFFFFF
+          font-style: normal
+          font-weight: 700
+          letter-spacing: 0.05em
+          text-transform: uppercase
+          color: #FFFFFF
+          position: absolute
+          top: 335px
+          right: 0px
+          background: 0
+          transition: .2s linear
+          &:hover
+            box-shadow: 230px 0 0 0 rgba(0,0,0,.3) inset
+        @media screen and (max-width: 860px)
+          min-width: 317px
+          span
+            font-size: 34px
+            line-height: 41px
+          h1
+            font-size: 86px
+            line-height: 86px
+          p
+            top: 126px
+            right: 205px
+          button
+            top: 275px
+            &:hover
+              box-shadow: 275px 0 0 0 rgba(0,0,0,.3) inset
+        @media screen and (max-width: 730px)
+          width: 100%
+          button
+            width: 317px
+            &:hover
+              box-shadow: 317px 0 0 0 rgba(0,0,0,.3) inset
+        @media screen and (max-width: 390px)
+          min-width: 286px
+          span
+            font-size: 28px
+            line-height: 34px
+          h1
+            font-size: 78px
+            line-height: 78px
+          p
+            top: 113px
+            right: 181px
+          button
+            top: 235px
+            width: 292px
+      .back_img
+        background: url("../img/header_img.jpg")
+        background-repeat: no-repeat
+        background-size: cover
+        width: 500px
+        height: 556px
+        margin: -64px 0 0 10px
+        @media screen and (max-width: 1230px)
+          width: 436px
+          height: 485px
+          margin: -41px 0 0 10px
+        @media screen and (max-width: 860px)
+          width: 324px
+          height: 390px
+        @media screen and (max-width: 730px)
+          display: none
+      .header_social
+        width: 20px
+        text-align: right
+        padding-top: 250px
+        a
+          display: inline-block
+          height: 30px
+          margin-bottom: 25px
+          transition: .2s
+        @media screen and (max-width: 940px)
+          display: none
+.gym
+  display: flex
+  justify-content: space-between
+  padding-top: 120px
+  padding-bottom: 235px
+  width: 100%
+  max-width: 1250px
+  min-width: 320px
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  padding-left: 45px
+  padding-right: 45px
+  margin: 0 auto
+  position: relative
+  .gym_text
+    box-sizing: border-box
+    width: 40%
+    min-width: 450px
+    padding-top: 47px
+    padding-left: 60px
+    padding-right: 50px
+    h2
+      font-family: "Bebas Neue"
+      font-size: 49px
+      line-height: 49px
+      margin-bottom: 8px
+    span
+      font-size: 18px
+      line-height: 150%
+      font-weight: 400
+      margin: 0 0 32px
+    .p_tag
+      padding-top: 32px
+      p
+        line-height: 150%
+        padding-top: 8px
+        font-weight: 300
+        font-size: 16px
+  .gym_img
+    display: flex
+    justify-content: flex-end
+    width: 60%
+    height: 401px
+    position: relative
+    background-image: url("../img/gym_main.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  .gym_vid
+    position: absolute
+    width: 364px
+    height: 228px
+    top: 408px
+    left: 482px
+    background: rgba(20, 54, 122)
+    img
+      opacity: 0.75
+
+  @media screen and (max-width: 1160px)
+    padding-top: 97px
+    padding-bottom: 185px
+    flex-wrap: wrap
+    .gym_text
+      width: 100%
+      text-align: center
+      min-width: auto
+      padding-top: 0
+      padding-left: 0
+      padding-right: 0
+      .p_tag
+        p
+          &:last-child
+            display: none
+    .gym_img
+      width: 100%
+      max-width: 678px
+      height: 345px
+      margin: 44px auto 0
+    .gym_vid
+      top: 585px
+      left: 50%
+      margin-left: -191px
+      background: rgba(20, 54, 122)
+  @media screen and (max-width: 670px)
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 360px
+    .gym_text
+      padding-left: 15px
+      padding-right: 15px
+      text-align: left
+      h2
+        font-size: 32px
+        line-height: 32px
+    .gym_vid
+      top: 726px
+      margin-left: -180px
+.tickets
+  background-color: #f8f9fc
+  padding-top: 120px
+  padding-bottom: 120px
+  text-align: center
+  position: relative
+  .tickets__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    max-width: 1250px
+    min-width: 320px
+    padding-left: 21px
+    margin: 0 auto
+    position: relative
+    h2
+      font-family: "Bebas Neue", "Arial", sans-serif
+      font-weight: 700
+      font-size: 49px
+      line-height: 49px
+      letter-spacing: .03em
+
+    .tickets__list
+      display: flex
+      list-style: none
+      margin-right: auto
+      margin-left: auto
+      margin-top: 35px
+      padding-bottom: 4.5px
+      border-bottom: 2px solid rgba(120,120,120,0.2)
+      li
+        margin-right: 47px
+        &:last-child
+          margin: 0
+        a
+          text-decoration: none
+          height: 100%
+          padding-bottom: 7.5px
+          font-size: 20px
+          line-height: 150%
+          color: rgba(16, 38, 84, 0.5)
+          transition: color .3s
+          cursor: pointer
+          transition: 0.2s
+          &:hover
+            color: #102654
+      @media screen and (max-width: 400px)
+        li
+          margin-right: 25px
+          &:last-child
+            margin: 0
+    .tickets__list--month
+      list-style: none
+      transition: .2s linear
+      li
+        display: flex
+        min-width: 30%
+        margin-top: 37px
+        margin-right: 3.5%
+        padding-top: 57px
+        padding-bottom: 66px
+        background-color: #fff
+        flex-direction: column
+        z-index: 1
+        border: 7px solid #fff
+        transition: 0.5s
+        @media screen and (max-width: 1345px)
+            min-width: 28%
+        &:last-child
+          margin-right: 0
+        h3
+          font-weight: 700
+          font-size: 26px
+          line-height: 40px
+        .time
+          margin-top: 8px
+        .price
+          font-weight: 700
+          font-size: 60px
+          line-height: 150%
+          color: #103aae
+          margin-top: 68px
+          span
+            font-weight: 400
+            font-size: 60px
+            line-height: 150%
+            color: #102654
+            margin-left: 12px
+        button
+          margin: 60px auto 0
+          background: 0
+          width: 200px
+          height: 60px
+          border: 2px solid #102654
+          font-family: "Roboto Condensed", "Arial", sans-serif
+          font-weight: 700
+          text-transform: uppercase
+          font-size: 12px
+          line-height: 100%
+          letter-spacing: .05em
+        &:hover
+          border-image: linear-gradient(to right bottom,#d10a43 0%,#02359e 100%)
+          border-image-slice: 1
+          button
+            background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%)
+            border:  #fff
+            color: #fff
+
+    .tickets__list--half
+      list-style: none
+      transition: .2s linear
+      li
+        display: flex
+        min-width: 30%
+        margin-top: 37px
+        margin-right: 3.5%
+        padding-top: 57px
+        padding-bottom: 66px
+        background-color: #fff
+        flex-direction: column
+        border: 7px solid #fff
+        z-index: 1
+        @media screen and (max-width: 1345px)
+            min-width: 28%
+        &:last-child
+          margin-right: 0
+        h3
+          font-weight: 700
+          font-size: 26px
+          line-height: 40px
+        .time
+          margin-top: 8px
+        .price
+          font-weight: 700
+          font-size: 60px
+          line-height: 150%
+          color: #103aae
+          margin-top: 68px
+          span
+            font-weight: 400
+            font-size: 60px
+            line-height: 150%
+            color: #102654
+            margin-left: 12px
+        button
+          margin: 60px auto 0
+          background: 0
+          width: 200px
+          height: 60px
+          border: 2px solid #102654
+          font-family: "Roboto Condensed", "Arial", sans-serif
+          font-weight: 700
+          text-transform: uppercase
+          font-size: 12px
+          line-height: 100%
+          letter-spacing: .05em
+          transition: 0.5s
+        &:hover
+          border-image: linear-gradient(to right bottom,#d10a43 0%,#02359e 100%)
+          border-image-slice: 1
+          button
+            background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%)
+            border:  #fff
+            color: #fff
+    .tickets__list--year
+      list-style: none
+      transition: .2s linear
+      li
+        display: flex
+        min-width: 30%
+        margin-top: 37px
+        margin-right: 3.5%
+        padding-top: 57px
+        padding-bottom: 66px
+        background-color: #fff
+        flex-direction: column
+        border: 7px solid #fff
+        z-index: 1
+        transition: 0.5s
+        @media screen and (max-width: 1345px)
+            min-width: 28%
+        &:last-child
+          margin-right: 0
+        h3
+          font-weight: 700
+          font-size: 26px
+          line-height: 40px
+        .time
+          margin-top: 8px
+        .price
+          font-weight: 700
+          font-size: 60px
+          line-height: 150%
+          color: #103aae
+          margin-top: 68px
+          transition: 0.5s
+          span
+            font-weight: 400
+            font-size: 60px
+            line-height: 150%
+            color: #102654
+            margin-left: 12px
+        button
+          margin: 60px auto 0
+          background: 0
+          width: 200px
+          height: 60px
+          border: 2px solid #102654
+          font-family: "Roboto Condensed", "Arial", sans-serif
+          font-weight: 700
+          text-transform: uppercase
+          font-size: 12px
+          line-height: 100%
+          letter-spacing: .05em
+          transition: 0.5s
+
+        &:hover
+          border-image: linear-gradient(to right bottom,#d10a43 0%,#02359e 100%)
+          border-image-slice: 1
+          button
+            background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%)
+            border:  #fff
+            color: #fff
+
+    @media screen and (max-width: 830px)
+      padding: 0
+      .tickets__list--month
+        flex-wrap: wrap
+        margin-top: 40px
+        li
+          min-width: 70%
+          margin: 0 auto 40px
+          &:last-child
+            margin-right: auto
+
+      .tickets__list--half
+        flex-wrap: wrap
+        margin-top: 40px
+        li
+          margin: 0 auto 40px
+          min-width: 70%
+          &:last-child
+            margin-right: auto
+      .tickets__list--year
+        flex-wrap: wrap
+        margin-top: 40px
+        li
+          margin: 0 auto 40px
+          min-width: 70%
+          &:last-child
+            margin-right: auto
+    @media screen and (max-width: 400px)
+      .tickets__list--month
+        li
+          min-width: 95%
+      .tickets__list--half
+        li
+          min-width: 95%
+      .tickets__list--year
+        li
+          min-width: 95%
+  .tickets__img
+    position: absolute
+    width: 381px
+    height: 384px
+    right: -42px
+    bottom: -100px
+    background-image: url('../img/блины.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    z-index: 0
+    @media screen and (max-width: 700px)
+      display: none
+.promo
+  padding-top: 120px
+  padding-bottom: 58px
+  display: flex
+  justify-content: center
+  width: 100%
+  max-width: 1250px
+  min-width: 320px
+  box-sizing: border-box
+  padding-left: 45px
+  padding-right: 45px
+  margin: 0 auto
+
+  .promo_text
+    display: flex
+    width: 43%
+    min-width: 450px
+    background-color: #ed0233
+    color: #fff
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 84px 76px 85px
+    box-sizing: border-box
+    h3
+      margin: 0
+      font-family: "Bebas Neue","Arial",sans-serif
+      font-weight: 700
+      font-size: 90px
+      line-height: 90px
+      letter-spacing: .03em
+      width: 60%
+      padding-left: 2px
+    .promo_date-wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      width: 30%
+      padding-left: 10px
+      .promo_date
+        width: 100%
+        height: 37%
+        .promo_date_title
+          font-size: 18px
+          border-bottom: 1px solid #fff
+          padding-bottom: 8px
+          margin-right: 30px
+        .promo_date_num
+          font-weight: 700
+          font-size: 40px
+          position: relative
+          top: 11px
+        .promo_date_text
+          position: relative
+          font-size: 14px
+          padding-left: 27px
+          padding-right: 20px
+          top: -21px
+      .promo_time
+        width: 100%
+        .promo_time_title
+          font-size: 18px
+          border-bottom: 1px solid #fff
+          padding-bottom: 8px
+        .promo_time_text
+          font-weight: 700
+          font-size: 40px
+          position: relative
+          top: 12px
+    .promo_description
+      font-size: 18px
+      padding-left: 2px
+      padding-top: 6px
+      margin-bottom: 47px
+    button
+      width: 100%
+      min-height: 70px
+      color: #fff
+      background: 0
+      border: 4px solid #fff
+      font-family: "Roboto Condensed"
+      font-weight: 700
+      font-size: 12px
+      text-transform: uppercase
+      transition: .2s linear
+      &:hover
+        box-shadow: 346px 0 0 0 rgba(0,0,0,.3) inset
+  .promo_img
+    width: 57%
+    background-image: url('../img/promo.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+  @media screen and (max-width: 1200px)
+    padding-top: 95px
+    max-width: 678px
+    padding-left: 0
+    padding-right: 0
+    .promo_text
+      min-width: auto
+      padding: 50px 45px
+      h3
+        font-size: 52px
+        line-height: 52px
+      .promo_date-wrapper
+        padding-left: 6px
+        .promo_date
+          .promo_date_title
+            font-size: 12px
+            padding-bottom: 0
+            margin-right: 15px
+          .promo_date_num
+            font-size: 24px
+            top: 3px
+          .promo_date_text
+            font-size: 10px
+            padding-left: 15px
+            padding-top: 0
+            line-height: 150%
+        .promo_time
+          .promo_time_title
+            font-size: 12px
+            padding-bottom: 0
+          .promo_time_text
+            font-size: 24px
+            top: 3px
+      .promo_description
+        font-size: 12px
+        padding-left: 0
+        padding-top: 0
+        margin-bottom: 25px
+      button
+        min-height: 41px
+        border: 2px solid #fff
+        font-size: 10px
+    .promo_img
+      width: 57%
+  @media screen and (max-width: 700px)
+    flex-direction: column
+    padding-top: 70px
+    max-width: 290px
+    padding-left: 15px
+    padding-right: 15px
+    .promo_text
+      width: 100%
+      max-width: 400px
+    .promo_img
+      width: 100%
+      min-height: 292px
+.coaches
+  padding-top: 62px
+  padding-bottom: 120px
+
+  .title
+    width: 100%
+    text-align: center
+    margin-bottom: 80px
+    h2
+      font-family: "Bebas Neue","Arial",sans-serif
+      font-weight: 700
+      font-size: 49px
+      line-height: 49px
+      letter-spacing: .03em
+  .slider-wrapper
+    max-width: 1250px
+    margin: 0 auto
+    position: relative
+    @media screen and (max-width: 1323px)
+      max-width: 620px
+    @media screen and (max-width: 692px)
+      max-width: 314px
+    .slider__arrow-list
+      position: absolute
+      width: 105%
+      top: 50%
+      left: -31px
+      margin-top: -17px
+      z-index: 1
+      list-style: none
+      display: flex
+      justify-content: space-between
+      margin: 0 auto
+      height: 0
+      li
+        .my-arrow-prev
+          width: 18px
+          height: 34px
+          cursor: pointer
+          border: 0
+          background-color: transparent
+          cursor: pointer
+          background-image: url('../img/slider-arrow(1).png')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          z-index: 1
+        .my-arrow-next
+          width: 18px
+          height: 34px
+          cursor: pointer
+          border: 0
+          background-color: transparent
+          background-image: url('../img/slider-arrow(1).png')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          transform: rotate(180deg)
+          z-index: 1
+      @media screen and (max-width: 1323px)
+        width: 110%
+      @media screen and (max-width: 692px)
+        width: 100%
+        left: 0
+        li
+          .my-arrow-prev
+            width: 12px
+            height: 28px
+          .my-arrow-next
+            width: 12px
+            height: 28px
+    .slider
+
+      .slick-slide
+        width: 260px
+        margin-right: 25px
+        margin-left: 25px
+        height: 294px
+        position: relative
+        transition: 0.5s
+        z-index: 2
+        img
+          width: 100%
+          transition: 0.5s
+        .slider__title
+          position: absolute
+          bottom: 8px
+          width: 100%
+          font-size: 18px
+          line-height: 150%
+          text-align: center
+          color: #fff
+        .slider__information
+          position: absolute
+          width: 100%
+          font-size: 18px
+          line-height: 150%
+          text-align: center
+          color: #fff
+          top: 0
+          display: none
+          left: 0
+          padding-top: 50px
+          .slider__sport
+            font-size: 16px
+            line-height: 150%
+            color: #b6bdcc
+          .slider__achievement-wrapper
+            text-align: left
+            font-size: 14px
+            line-height: 150%
+            padding: 0 10px 0 71px
+            margin-top: 31px
+            .slider__achievement
+              margin-bottom: 15px
+        &:hover
+          background-color: rgba(16, 38, 84)
+          img
+            opacity: 0.17
+          .slider__title
+            display: none
+          .slider__information
+            display: block
+
+
+
+
+.advantages
+  background-color: #f8f9fc
+  padding: 118px 0
+  h2
+    font-family: "Bebas Neue"
+    font-size: 49px
+    line-height: 49px
+    letter-spacing: .03em
+    text-align: center
+    margin-bottom: 79px
+  .advantages-wrapper
+    display: flex
+    width: 100%
+    position: relative
+    max-width: 1250px
+    min-width: 320px
+    margin: 0 auto
+    flex-wrap: wrap
+    .advantages_top
+      display: flex
+      justify-content: space-between
+      width: 100%
+      .advantages_square
+        width: 32.8%
+        padding-bottom: 78px
+        border-bottom: 2px solid rgba(209,10,66,.2)
+        background-image: url('../img/advantages_tl.png')
+        background-repeat: no-repeat
+        background-position: 56px 3px
+        h3
+          width: 178px
+          margin-left: auto
+          font-weight: 700
+          font-size: 22px
+          line-height: 150%
+        p
+          width: 178px
+          margin-left: auto
+          font-weight: 300
+          font-size: 16px
+          line-height: 140%
+          padding-top: 5px
+      .advantages_parking
+        width: 32.8%
+        padding-bottom: 78px
+        border-bottom: 2px solid rgba(209,10,66,.2)
+        background-image: url('../img/advantages_tr.png')
+        background-repeat: no-repeat
+        background-position: 56px 3px
+        h3
+          width: 230px
+          margin-left: auto
+          font-weight: 700
+          font-size: 22px
+          line-height: 150%
+        p
+          width: 230px
+          margin-left: auto
+          font-weight: 300
+          font-size: 16px
+          line-height: 140%
+          padding-top: 5px
+    .advantages_center
+      position: absolute
+      width: 240px
+      height: 307px
+      left: 50%
+      margin-left: -120px
+      text-align: center
+      background-color: #1c3374
+      color: #fff
+      h3
+        padding-top: 34px
+        font-weight: 700
+        font-size: 74px
+        line-height: 150%
+      h4
+        font-weight: 700
+        font-size: 26px
+      p
+        width: 172px
+        padding: 34px 30px
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+    .advantages_bottom
+      display: flex
+      justify-content: space-between
+      width: 100%
+      padding-top: 74px
+      .advantages_comfort
+        width: 32.8%
+        background-image: url('../img/advantages_bl.png')
+        background-repeat: no-repeat
+        background-position: 56px 3px
+        h3
+          width: 185px
+          margin-left: auto
+          font-weight: 700
+          font-size: 22px
+          line-height: 150%
+        p
+          width: 185px
+          margin-left: auto
+          font-weight: 300
+          font-size: 16px
+          line-height: 140%
+          padding-top: 5px
+      .advantages_experience
+        width: 32.8%
+        background-image: url('../img/advantages_br.png')
+        background-repeat: no-repeat
+        background-position: 56px 3px
+        h3
+          width: 230px
+          margin-left: auto
+          font-weight: 700
+          font-size: 22px
+          line-height: 150%
+        p
+          width: 230px
+          margin-left: auto
+          font-weight: 300
+          font-size: 16px
+          line-height: 140%
+          padding-top: 5px
+  @media screen and (max-width: 1150px)
+    h2
+      font-size: 42px
+      line-height: 42px
+    .advantages-wrapper
+      .advantages_top
+        margin-bottom: 30px
+        .advantages_square
+          width: 370px
+          border: 0
+          padding-right: 10px
+          padding-bottom: 0
+          h3
+            font-size: 20px
+        .advantages_parking
+          width: 370px
+          border: 0
+          padding-bottom: 0
+          padding-right: 20px
+          h3
+            font-size: 20px
+      .advantages_center
+        position: relative
+        width: 50%
+        margin: 0 auto
+        left: 0
+        p
+          margin: 0 auto
+      .advantages_bottom
+        .advantages_comfort
+          width: 370px
+          h3
+            font-size: 20px
+        .advantages_experience
+          width: 370px
+          padding-right: 20px
+          h3
+            font-size: 20px
+  @media screen and (max-width: 800px)
+    h2
+      font-size: 32px
+      line-height: 32px
+    .advantages-wrapper
+      .advantages_top
+        flex-wrap: wrap
+        .advantages_square
+          width: 100%
+          padding: 0
+          padding-top: 110px
+          margin: 0
+          margin-bottom: 30px
+          text-align: center
+          background-image: url('../img/advantages_tl(min).png')
+          background-position: 50% 34px
+          h3
+            margin: 0 auto
+          p
+            margin: 0 auto
+        .advantages_parking
+          width: 100%
+          padding: 0
+          padding-top: 110px
+          margin: 0
+          margin-bottom: 30px
+          text-align: center
+          background-image: url('../img/advantages_tr(min).png')
+          background-position: 50% 34px
+          h3
+            margin: 0 auto
+          p
+            margin: 0 auto
+      .advantages_center
+        width: 100%
+      .advantages_bottom
+        flex-wrap: wrap
+        padding-top: 29px
+        .advantages_comfort
+          width: 100%
+          padding: 0
+          padding-top: 110px
+          margin: 0
+          margin-bottom: 30px
+          text-align: center
+          background-image: url('../img/advantages_bl(min).png')
+          background-position: 50% 34px
+          h3
+            margin: 0 auto
+          p
+            margin: 0 auto
+        .advantages_experience
+          width: 100%
+          padding: 0
+          padding-top: 110px
+          margin: 0
+          margin-bottom: 30px
+          text-align: center
+          background-image: url('../img/advantages_br(min).png')
+          background-position: 50% 34px
+          h3
+            margin: 0 auto
+          p
+            margin: 0 auto
+.stocks
+  max-width: 1250px
+  margin: 0 auto
+  padding: 119px 45px 50px
+  h2
+    font-weight: 700
+    font-size: 49px
+    line-height: 49px
+    letter-spacing: 0.03em
+    font-family: "Bebas Neue"
+    text-align: center
+  .stocks-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 52px
+    .stocks_info
+      display: flex
+      flex-wrap: wrap
+      width: 48%
+      .stocks_info_text
+        display: flex
+        flex-wrap: wrap
+        width: 50%
+        min-height: 462px
+        flex-direction: column
+        color: #fff
+        background-color: #ed0233
+        box-sizing: border-box
+        padding: 35px 35px 45px 45px
+        h3
+          font-weight: 700
+          font-size: 28px
+          line-height: 156%
+        span
+          font-weight: 700
+          font-size: 70px
+          line-height: 80%
+        p
+          font-size: 18px
+          line-height: 140%
+          margin-top: 28px
+        a
+          font-weight: 700
+          font-size: 14px
+          line-height: 16px
+          letter-spacing: .05em
+          text-transform: uppercase
+          text-decoration: none
+          color: #fff
+          max-width: 79px
+          border-bottom: 1px solid #fff
+          margin-top: auto
+      .stocks_info_img
+        width: 50%
+        background-image: url('../img/stocks_img.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    .stocks_bonus_wrapper
+      display: flex
+      flex-wrap: wrap
+      width: 48%
+      .stocks_bonus
+        width: 100%
+        display: flex
+        flex-direction: column
+        padding: 23px 22px 28px 28px
+        border: 7px solid
+        border-image: linear-gradient(to right bottom,#d10a43 0%,#02359e 100%)
+        border-image-slice: 1
+        color: #1C3374
+        &:first-child
+          margin-bottom: 40px
+        h3
+          font-weight: 700
+          font-size: 26px
+        p
+          font-size: 16px
+          line-height: 140%
+          margin-top: 9px
+        a
+          font-weight: 700
+          font-size: 12px
+          line-height: 14px
+          letter-spacing: .05em
+          text-transform: uppercase
+          text-decoration: none
+          color: #1c3374
+          width: 68px
+          border-bottom: 1px solid #1c3374
+          margin-top: auto
+  @media screen and (max-width: 1000px)
+    .stocks-wrapper
+      .stocks_info
+        width: 100%
+      .stocks_bonus_wrapper
+        flex-wrap: nowrap
+        width: 100%
+        justify-content: space-between
+        .stocks_bonus
+          margin-top: 50px
+          width: 39%
+          height: 211px
+          &:first-child
+            margin-bottom: 0
+  @media screen and (max-width: 750px)
+    .stocks-wrapper
+      .stocks_info
+        width: 100%
+      .stocks_bonus_wrapper
+        flex-wrap: wrap
+        width: 100%
+        justify-content: space-between
+        .stocks_bonus
+          text-align: center
+          margin-top: 50px
+          width: 100%
+          height: 148px
+          a
+            margin: 30px auto
+  @media screen and (max-width: 650px)
+    .stocks-wrapper
+      .stocks_info
+        width: 100%
+        .stocks_info_text
+          text-align: center
+          width: 100%
+          a
+            margin: auto auto 0
+        .stocks_info_img
+          width: 100%
+          height: 386px
+          background-image: url('../img/stocks_img(med).jpg')
+  @media screen and (max-width: 450px)
+    .stocks-wrapper
+      .stocks_info
+        .stocks_info_img
+          background-image: url('../img/stocks_img(min).jpg')
+.reviews
+  padding-top: 70px
+  h2
+    font-family: "Bebas Neue","Arial",sans-serif
+    font-weight: 700
+    font-size: 49px
+    line-height: 49px
+    letter-spacing: .03em
+    text-align: center
+    width: 100%
+  .reviews-wrapper
+    max-width: 600px
+    margin: 70px auto 0
+    position: relative
+    @media screen and (max-width: 700px)
+      max-width: 500px
+    @media screen and (max-width: 550px)
+      max-width: 300px
+    .slider__arrow-list
+      position: absolute
+      width: 112%
+      top: 50%
+      left: -32px
+      margin-top: -17px
+      z-index: 1
+      list-style: none
+      display: flex
+      justify-content: space-between
+      margin: 0 auto
+      height: 0
+      li
+        .my-arrow-prev2
+          width: 18px
+          height: 34px
+          cursor: pointer
+          border: 0
+          background-color: transparent
+          cursor: pointer
+          background-image: url('../img/slider-arrow(1).png')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          z-index: 1
+        .my-arrow-next2
+          width: 18px
+          height: 34px
+          cursor: pointer
+          border: 0
+          background-color: transparent
+          background-image: url('../img/slider-arrow(1).png')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          transform: rotate(180deg)
+          z-index: 1
+      @media screen and (max-width: 550px)
+        width: 111%
+        left: -12px
+        li
+          .my-arrow-prev2
+            width: 12px
+            height: 28px
+          .my-arrow-next2
+            width: 12px
+            height: 28px
+    .reviews-slider
+
+      .slick-slide
+        width: 100%
+        margin-right: 25px
+        margin-left: 25px
+        height: 142px
+        position: relative
+        background-color: #1c3374
+        padding: 60px
+        display: flex
+        @media screen and (max-width: 700px)
+          padding: 23px
+        @media screen and (max-width: 550px)
+          height: 335px
+
+        div
+          div
+            .review
+              display: flex
+              justify-content: space-between
+              color: #fff
+
+              img
+                width: 80px
+                height: 80px
+              .reviews__text
+                width: 70%
+                h3
+                  font-weight: 700
+                  font-size: 20px
+                  line-height: 90%
+                p
+                  padding-top: 20px
+              @media screen and (max-width: 550px)
+                display: inline
+                img
+                  width: 68px
+                  height: 68px
+                  position: absolute
+                .reviews__text
+                  width: 100%
+                  h3
+                    font-weight: 700
+                    font-size: 20px
+                    padding-left: 100px
+                    line-height: 130%
+                    padding-top: 10px
+                  p
+                    padding-top: 40px
+                    font-size: 16px
+                    text-align: center
+                    line-height: 160%
+
+.connection
+  display: flex
+  flex-wrap: wrap
+  padding-top: 38px
+  justify-content: center
+  width: 100%
+
+  .form-wrapper
+    width: 50%
+    background-color: #102654
+    color: #fff
+    padding: 70px 0
+    .form
+      max-width: 683px
+      margin-left: auto
+      h2
+        font-family: "Bebas Neue"
+        font-weight: 700
+        font-size: 49px
+        line-height: 49px
+        letter-spacing: .03em
+        padding-left: 15%
+      form
+        margin-top: 42px
+        padding-left: 15%
+        padding-right: 20%
+        .input-wrapper
+          justify-content: space-between
+          width: 100%
+          display: flex
+          flex-wrap: wrap
+          margin-bottom: 10px
+          input
+            font-family: 'Roboto Condensed'
+            background: 0
+            border: 0
+            border-bottom: 1px solid #74819c
+            width: 45%
+            padding-bottom: 5px
+            padding-top: 5px
+            font-size: 14px
+            color: #fff
+            @media screen and (max-width: 600px)
+              width: 100%
+              &:first-child
+                margin-bottom: 30px
+        .ans
+          height: 22px
+          padding-left: 20px
+        button
+          width: 100%
+          font-family: 'Roboto Condensed'
+          min-height: 55px
+          margin-top: 28px
+          color: #fff
+          border: 3px solid #fff
+          font-size: 14px
+          line-height: 16px
+          letter-spacing: .05em
+          font-weight: 700
+          text-transform: uppercase
+          background: 0
+          transition: .2s linear
+          &:hover
+            box-shadow: 500px 0 0 0 rgba(0,0,0,.3) inset
+  .contacts-wrapper
+    width: 50%
+    border-top: 1px solid #74819c
+    .contacts
+      max-width: 683px
+      margin-right: auto
+      padding: 70px 0
+      h2
+        font-family: 'Bebas Neue'
+        font-weight: 700
+        font-size: 49px
+        line-height: 49px
+        letter-spacing: .03em
+        width: 100%
+        padding-left: 17%
+      .contacts_inf
+        display: flex
+        margin-top: 47px
+        padding-left: 17%
+        .left
+          list-style: none
+          width: 42%
+          padding: 0 20px 0 4px
+          border-right: 1px solid #74819c
+          p
+            font-family: "Roboto Condensed"
+            font-weight: 700
+            font-size: 16px
+            line-height: 100%
+          a
+            display: block
+            text-decoration: none
+            font-size: 14px
+            line-height: 100%
+            color: #102654
+            margin-top: 12px
+          .working
+            margin-top: 30px
+        .right
+          list-style: none
+          width: 42%
+          padding-left: 60px
+          p
+            font-family: "Roboto Condensed"
+            font-weight: 700
+            font-size: 16px
+            line-height: 100%
+          a
+            display: block
+            text-decoration: none
+            font-size: 14px
+            line-height: 100%
+            color: #102654
+            margin-top: 12px
+          .mail
+            margin-top: 30px
+  @media screen and (max-width: 600px)
+    .form-wrapper
+      .form
+        h2
+          font-size: 32px
+          line-height: 32px
+          padding-left: 7%
+          padding-right: 7%
+        form
+          padding-left: 7%
+          padding-right: 7%
+    .contacts-wrapper
+      .contacts
+        h2
+          padding-left: 7%
+          padding-right: 7%
+        .contacts_inf
+          padding-left: 7%
+          padding-right: 7%
+          flex-wrap: wrap
+          .left
+            border: 0
+            width: 100%
+            padding: 0
+            margin-bottom: 30px
+          .right
+            width: 100%
+            padding: 0
+  @media screen and (max-width: 1044px)
+    .form-wrapper
+      width: 100%
+      .form
+        margin: 0
+    .contacts-wrapper
+      width: 100%
+
+footer
+  background-color: #030a1a
+  padding: 40px 0
+  margin-top: auto
+  .footer-wrapper
+    width: 100%
+    max-width: 1250px
+    padding: 0 45px
+    margin: 0 auto
+    nav
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      .logo
+        font-family: 'Bebas Neue'
+        font-size: 26px
+        line-height: 26px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        text-decoration: none
+        color: #fff
+      .list
+        display: flex
+        flex-wrap: wrap
+        width: 431px
+        justify-content: space-between
+        font-size: 14px
+        line-height: 16px
+        .right
+          display: flex
+          flex-wrap: wrap
+          a
+            text-decoration: none
+            color: #fff
+            &:first-child
+              padding-right: 38px
+        .left
+          display: flex
+          flex-wrap: wrap
+          a
+            text-decoration: none
+            color: #fff
+            padding-left: 38px
+      .ico
+        display: flex
+        width: 115px
+        justify-content: space-between
+        padding-right: 72px
+        svg
+          &:first-child
+            margin-top: 5px
+  @media screen and (max-width: 750px)
+    .footer-wrapper
+      nav
+        .logo
+          width: 100%
+        .list
+          width: 80%
+
+          .right
+            width: 50%
+            a
+              width: 100%
+              padding-top: 20px
+          .left
+            width: 50%
+            a
+              width: 100%
+              margin-top: -20px
+              &:first-child
+                padding-bottom: 45px
+              &:last-child
+                margin-top: 17px
+        .ico
+          margin-top: 20px
