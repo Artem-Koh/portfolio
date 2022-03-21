@@ -1,0 +1,131 @@
+.cell {
+    //height: 100%;
+    position: relative;
+    padding: 0 0 14px 0;
+    transition: 0.5s;
+
+    &--margin {
+        margin-bottom: 24px;
+    }
+
+    &--with-checkbox {
+        margin-bottom: 8px;
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-main-c;
+        background-color: transparent;
+        transition: 0.5s;
+    }
+
+    &__data {
+        position: relative;
+        padding: 14px 24px;
+        font-size: 20px;
+        line-height: 25px;
+        color: $text-secondary-c;
+        border: 1px solid #F4F4F4;
+        transition: 0.5s;
+
+        &--caption {
+          padding-right: 164px;
+        }
+
+        &--sign-value {
+            padding-bottom: 36px;
+        }
+
+        &.disabled {
+          pointer-events: none;
+          background-color: #F9FBFD;
+          //cursor: not-allowed;
+        }
+    }
+
+    &__data-icon,
+    &__caption {
+        position: absolute;
+        top: 50%;
+        right: 24px;
+        transform: translate(0, -50%);
+    }
+
+    &__caption {
+        font-size: 12px;
+        line-height: 15px;
+        color: #7D7D7D;
+
+        &--bottom {
+            top: auto;
+            bottom: 12px;
+            transform: translate(0, 0);
+        }
+    }
+
+    &__sign-value {
+        position: absolute;
+        bottom: 12px;
+        left: 34px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #7D7D7D;
+    }
+
+    &__error-message {
+        position: absolute;
+        width: 100%;
+        bottom: -3px;
+        left: 0;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: $error-c;
+        display: none;
+    }
+
+    &--error {
+
+        .cell__name {
+            color: $error-c;
+        }
+
+        .cell__data {
+            border-color: $error-c;
+        }
+
+        //Стили для select2
+        .select2-container--default .select2-selection--multiple,
+        .select2-container--default.select2-container--focus .select2-selection--multiple {
+            border-color: $error-c;
+        }
+    }
+
+    .form-group {
+        flex-direction: column;
+
+        .cell-input--admin {
+            padding: 14px 24px;
+            font-size: 20px;
+            line-height: 25px;
+            color: $text-secondary-c;
+            border: 1px solid #F4F4F4;
+        }
+
+        .col-sm-10 {
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .col-form-label {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 12px;
+        padding: 0;
+    }
+}

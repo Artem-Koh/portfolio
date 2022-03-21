@@ -1,0 +1,110 @@
+.data {
+    background-color: #fff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    &__item {
+        display: flex;
+        padding: 15px 30px;
+        justify-content: space-between;
+        width: 100%;
+        transition: 0.5s;
+
+        &:nth-child(odd){
+          background-color: #F9FBFD;
+        }
+
+        &:hover {
+          background: #FFFFFF;
+          box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.06);
+        }
+
+        &:last-child {
+            border-radius: 0 0 12px 12px;
+        }
+
+    }
+
+    &__element {
+      display: flex;
+      align-items: center;
+      text-align: left;
+
+      &--num {
+        width: 36px;
+      }
+
+      &--name {
+        width: 23%;
+      }
+
+      &--email {
+        width: 20%;
+      }
+
+      &--emailAlt {
+        width: 20%;
+      }
+
+      &--quantity {
+        width: 114px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      &--deactivate {
+        width: 15%;
+        justify-content: center;
+      }
+
+      &--deactivate-deact {
+        color: #A02121;
+        border-bottom: 1px solid transparent;
+        &:hover {
+            color: #A02121;
+            border-color: #A02121;
+            cursor: pointer;
+        }
+      }
+
+      &--deactivate-act {
+        color: #21A038;
+        border-bottom: 1px solid transparent;
+        &:hover {
+            color: #21A038;
+            border-color: #21A038;
+            cursor: pointer;
+        }
+      }
+
+      &--deactivate-resend {
+        color: #FF7A00;
+        border-bottom: 1px solid transparent;
+        &:hover {
+            color: #FF7A00;
+            border-color: #FF7A00;
+            cursor: pointer;
+        }
+      }
+
+      &--date {
+        &-date {
+          margin-right: 7px;
+        }
+
+        &-time {
+          color: #7D7D7D;
+        }
+      }
+    }
+
+    &__item-main {
+      display: flex;
+      height: 74px;
+      padding: 15px 30px;
+      justify-content: space-between;
+      width: 100%;
+      color: #7D7D7D;
+    }
+
+}

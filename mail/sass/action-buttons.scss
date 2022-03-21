@@ -1,0 +1,18 @@
+.action-buttons {
+    margin-bottom: 24px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__el {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        margin-right: 16px;
+    }
+}

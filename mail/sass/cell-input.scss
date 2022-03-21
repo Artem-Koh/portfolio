@@ -1,0 +1,25 @@
+.cell-input {
+    width: 100%;
+    //padding: 14px 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-main-c;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-secondary-c;
+    }
+
+    &.error {
+        color: $error-c;
+    }
+
+    &[disabled] {
+        background-color: #F9FBFD;
+        cursor: not-allowed;
+    }
+}
