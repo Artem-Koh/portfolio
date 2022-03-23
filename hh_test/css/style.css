@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gilroy";
+  font-weight: 800;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid #EBEBEB;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.header--map {
+  width: 85px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #EBEBEB;
+}
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+.header__main--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+.header__main--logo {
+  width: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__main--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+.header__main--element {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(34, 34, 34, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.header__main--element:hover {
+  color: #000;
+  border-color: #000;
+  cursor: pointer;
+}
+.header__main--element.act {
+  color: #000;
+  border-color: #000;
+}
+.header--phone {
+  width: 85px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #EBEBEB;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.button--svg {
+  position: absolute;
+  left: -12px;
+  top: 50%;
+}
+.button--a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #EBEBEB;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.button--a:hover {
+  -webkit-box-shadow: 260px 0 0 0 rgba(0, 0, 0, 0.3) inset;
+          box-shadow: 260px 0 0 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+.main {
+  background: url("../img/Image.jpg") no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  margin-bottom: 100px;
+}
+.main__menu--text {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  width: 981px;
+  text-align: center;
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: 2;
+}
+.main__menu--text span {
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.main__menu--text span:first-child {
+  display: block;
+  color: #000;
+}
+.main__menu--button {
+  margin: 0 auto 260px;
+}
+.main__menu--nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+.main__menu--nav-el {
+  width: 25%;
+  height: 85px;
+  font-size: 20px;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.main__menu--nav-el:hover {
+  -webkit-box-shadow: 380px 0 0 0 rgba(0, 0, 0, 0.3) inset;
+          box-shadow: 380px 0 0 0 rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
+}
+.main__menu--nav-el:first-child {
+  border-left: 0;
+}
+.main__menu--nav-el .hide {
+  display: none;
+}
+.main__menu--nav-el.act .hide {
+  display: inline;
+  position: absolute;
+  background: #EB5757;
+  height: 231px;
+  width: 380px;
+  top: -612px;
+  z-index: 1;
+  padding-top: 467px;
+}
+.main__menu--nav-el.act .hide span {
+  text-align: center;
+  display: block;
+}
+.main__menu--nav-el.act .hide p {
+  font-family: "Montserrat";
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 30px 45px;
+}
+.main__menu--nav-el.act .hide svg {
+  width: 100%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.main__menu--svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+.main.serv {
+  background: url("../img/Background.png") no-repeat;
+  background-size: 100%;
+}
+.main.serv .header--map path {
+  fill: #fff;
+}
+.main.serv .header__main--logo path {
+  fill: #fff;
+}
+.main.serv .header__main--element {
+  color: rgba(255, 255, 255, 0.7);
+}
+.main.serv .header__main--element:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+.main.serv .header__main--element.act {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.main.serv .header--phone path {
+  fill: #fff;
+}
+.main.serv .main__menu--text span {
+  color: #000;
+  text-shadow: 0;
+}
+.main.serv .main__menu--text span:first-child {
+  display: block;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.main.serv .main__menu--button rect {
+  fill: #FFFFFF;
+}
+.main.serv .main__menu--button a {
+  color: #FFFFFF;
+}
+.main.type {
+  background: url("../img/Background (1).png") no-repeat;
+  background-size: 100%;
+}
+.main.type .header--map path {
+  fill: #fff;
+}
+.main.type .header__main--logo path {
+  fill: #fff;
+}
+.main.type .header__main--element {
+  color: rgba(255, 255, 255, 0.7);
+}
+.main.type .header__main--element:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+.main.type .header__main--element.act {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.main.type .header--phone path {
+  fill: #fff;
+}
+.main.type .main__menu--text span {
+  color: #000;
+  text-shadow: 0;
+}
+.main.type .main__menu--text span:first-child {
+  display: block;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.main.type .main__menu--button rect {
+  fill: #FFFFFF;
+}
+.main.type .main__menu--button a {
+  color: #FFFFFF;
+}
+.main.des {
+  background: url("../img/Background (2).png") no-repeat;
+  background-size: 100%;
+}
+.main.des .header--map path {
+  fill: #fff;
+}
+.main.des .header__main--logo path {
+  fill: #fff;
+}
+.main.des .header__main--element {
+  color: rgba(255, 255, 255, 0.7);
+}
+.main.des .header__main--element:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+.main.des .header__main--element.act {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.main.des .header--phone path {
+  fill: #fff;
+}
+.main.des .main__menu--text span {
+  color: #000;
+  text-shadow: 0;
+}
+.main.des .main__menu--text span:first-child {
+  display: block;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.main.des .main__menu--button rect {
+  fill: #FFFFFF;
+}
+.main.des .main__menu--button a {
+  color: #FFFFFF;
+}
+.main.repair {
+  background: url("../img/Background (3).png") no-repeat;
+  background-size: 100%;
+}
+.main.repair .header--map path {
+  fill: #fff;
+}
+.main.repair .header__main--logo path {
+  fill: #fff;
+}
+.main.repair .header__main--element {
+  color: rgba(255, 255, 255, 0.7);
+}
+.main.repair .header__main--element:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+.main.repair .header__main--element.act {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.main.repair .header--phone path {
+  fill: #fff;
+}
+.main.repair .main__menu--text span {
+  color: #000;
+  text-shadow: 0;
+}
+.main.repair .main__menu--text span:first-child {
+  display: block;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.main.repair .main__menu--button rect {
+  fill: #FFFFFF;
+}
+.main.repair .main__menu--button a {
+  color: #FFFFFF;
+}
+
+.wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.text-main {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.text-main svg {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+}
+.text-main span {
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+.examples--image {
+  margin-bottom: 50px;
+}
+.examples--button {
+  margin-bottom: 100px;
+}
+
+.feedback--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feedback__info {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feedback__info--el .textUp {
+  margin-bottom: 20px;
+}
+.feedback__info--el .textD {
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+}
+.feedback__info--el .textD a {
+  text-decoration: none;
+  color: #222222;
+}
+.feedback__form {
+  width: 30%;
+}
+
+.form--text {
+  margin-bottom: 40px;
+}
+.form--inp {
+  margin-bottom: 55px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+.form--inp label {
+  position: absolute;
+  top: -16px;
+}
+.form--inp input {
+  border: 0;
+  border-bottom: 1px solid #EBEBEB;
+  height: 25px;
+  width: 300px;
+}
+.form--ps {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 300;
+  width: 300px;
+  margin-bottom: 30px;
+}
+.form--ps a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: #222222;
+}
+.form--button {
+  margin: 0;
+  width: 260px;
+}
+.form--button a {
+  width: 260px;
+}
+
+footer {
+  margin-top: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 2px solid #222222;
+  font-family: "Montserrat", sans-serif;
+}
+footer span {
+  font-family: "Gilroy";
+  font-weight: 800;
+}
+footer .footer--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, 413px);
+  grid-auto-flow: dense;
+}
+.app--img {
+  position: relative;
+  background-size: 100%;
+  background-color: #000;
+}
+.app--img span {
+  position: absolute;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+}
+.app--img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+.app--img.long {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+.app--img.high {
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
