@@ -1,4 +1,4 @@
-$('.navigation--el').on('click', function(){
+$('.navigation--el').on('mouseover', function(){
   let mod = $(this).attr('id')
   let change = $(this).find('.find').html()
 
