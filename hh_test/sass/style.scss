@@ -202,9 +202,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover{
-          cursor: pointer;
-        }
+        
 
         &:first-child {
           border-left: 0;
