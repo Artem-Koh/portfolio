@@ -176,39 +176,4 @@
         flex-shrink: 0;
         width: 280px;
     }
-
-    &--cancel {
-        width: 200px;
-        height: 56px;
-        color: #21A038;
-        background-color: #ffffff;
-        border: 1px solid #F4F4F4;
-        margin-right: 12px;
-
-        &:hover {
-            color: #21A038;
-            background-color: #F4F4F4;
-        }
-    }
-
-    &--send {
-        flex-shrink: 0;
-        width: 200px;
-        height: 56px;
-    }
-
-    &--ok {
-        flex-shrink: 0;
-        width: 150px;
-        height: 56px;
-        margin: 0 auto;
-        color: #fff;
-        background-color: $text-third-c;
-        border: 2px solid $text-third-c;
-
-        &:hover {
-            color: $text-third-c;
-            background-color: #fff;
-        }
-    }
 }

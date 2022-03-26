@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo-link {
+        margin-right: 124px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &__site-search {
+        flex-grow: 1;
+        margin-right: 34px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+
+        &:first-child {
+            margin-right: 24px;
+        }
+    }
+}

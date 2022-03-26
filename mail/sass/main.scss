@@ -1,0 +1,29 @@
+.main {
+  flex-grow: 1;
+  padding-bottom: 88px;
+}
+
+.main__title {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 300px;
+    font-size: 34px;
+    text-align: center;
+}
+
+.icon-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: pink;
+}
+
+.slider {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.slider__item {
+    padding-top: 56.25%;
+}

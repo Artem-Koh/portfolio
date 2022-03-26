@@ -1,0 +1,121 @@
+//Функция присваивает значения z-index элементам проекта
+//Пример использования: .block {z-index: z('block');}
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+);
+
+//Медиа запросы для разных ширин экрана
+//Пример использования: @include desktop_1200 {font-size: 20px;}
+@mixin before_1366 {
+    @media screen and (max-width: 1365px) {
+        @content;
+    }
+}
+
+@mixin before_1200 {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin before_1024 {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin before_768 {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin before_480 {
+    @media screen and (max-width: 479px) {
+        @content;
+    }
+}
+
+//Смещение элемента
+//Пример использования: .block {@include offset}
+@mixin offset($top: 50%, $left: 50%, $right: auto, $bottom: auto, $trans-top: -50%, $trans-left: -50%, $rotate: 0) {
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    transform: translate($trans-left, $trans-top) rotate($rotate);
+}
+
+//Создает треугольник с заливкой
+//Пример использования: .block {@include css-triangle($color: red, $direction: right, $size: 10px);}
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
+    @include pseudo($pos: $position);
+    width: 0;
+    height: 0;
+    @if $round {
+        border-radius: 3px;
+    }
+    @if $direction == down {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+        margin-top: 0 - round( $size / 2.5 );
+    } @else if $direction == up {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+        margin-bottom: 0 - round( $size / 2.5 );
+    } @else if $direction == right {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        margin-right: -$size;
+    } @else if  $direction == left {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+        margin-left: -$size;
+    }
+}
+
+//Создает стрелку без заливки
+//Пример использования: .block {@include css-arrow($color: red, $direction: right, $size: 10px);}
+@mixin css-arrow($color, $direction, $size: 10px, $size-border: 2px, $position: absolute) {
+    @include pseudo($pos: $position);
+    width: $size;
+    height: $size;
+    @if $direction == down {
+        border-right: $size-border solid $color;
+        border-bottom: $size-border solid $color;
+    } @else if $direction == up {
+        border-top: $size-border solid $color;
+        border-left: $size-border solid $color;
+    } @else if $direction == right {
+        border-right: $size-border solid $color;
+        border-bottom: $size-border solid $color;
+    } @else if  $direction == left {
+        border-top: $size-border solid $color;
+        border-left: $size-border solid $color;
+    }
+}
+
+//Усечение элемента и добавление троеточия
+//Пример использования: .block {@include truncate(100px);}
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

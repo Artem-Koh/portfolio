@@ -1,0 +1,29 @@
+.site-search {
+
+    &__icon {
+        flex-shrink: 0;
+        margin-right: 24px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        background-color: #F9FBFD;
+        transition: 0s;
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color: $text-main-c;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &::placeholder {
+            color: #7D7D7D;
+        }
+    }
+}
