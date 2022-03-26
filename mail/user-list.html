@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Стартовый шаблон</title>
+    <meta name="description" content="Стартовый шаблон для созадни проектов"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+</div>
+<div class="grid">
+  <header class="header">
+      <div class="wrapper wrapper--header">
+          <div class="navigation">
+              <a href="/" class="navigation__logo-link">
+                  <img class="navigation__logo" src="img/logo.svg" alt="Логотип компании">
+              </a>
+              <div class="navigation__buttons">
+                  <a href="logging-log.html" class="button button--white button--logging navigation__button">Журнал логирования</a>
+                  <a href="/" class="button button--out navigation__button">Выйти</a>
+              </div>
+          </div>
+      </div>
+  </header>
+  <section class="main">
+      <div class="wrapper">
+          <div class="tabs">
+              <div class="tabs__list">
+                <div class="site-search tabs__site-search">
+                    <form action="/Search" method="post" class="form site-search__form">
+                        <svg class="icon site-search__icon" width="20" height="20">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8915 8.94573C15.8915 12.7818 12.7818 15.8915 8.94573 15.8915C5.10971 15.8915 2 12.7818 2 8.94573C2 5.10971 5.10971 2 8.94573 2C12.7818 2 15.8915 5.10971 15.8915 8.94573ZM14.5249 15.939C12.9952 17.1609 11.0558 17.8915 8.94573 17.8915C4.00514 17.8915 0 13.8863 0 8.94573C0 4.00514 4.00514 0 8.94573 0C13.8863 0 17.8915 4.00514 17.8915 8.94573C17.8915 11.0557 17.161 12.9951 15.9391 14.5247L18.5987 17.1844L19.3058 17.8915L17.8916 19.3057L17.1845 18.5986L14.5249 15.939Z"/>
+                        </svg>
+                        <input
+                            id="search-input"
+                            type="text"
+                            class="site-search__input"
+                            name="search"
+                            placeholder="Искать амбассадора,ФИО "
+                        >
+                    </form>
+                </div>
+                <a href="#" class="button button--add tabs__button" data-popup-name="popup-addAnAmbassador">Добавить амбассадора</a>
+              </div>
+              <div class="tabs__content">
+                <div class="data">
+                  <div class="data__list">
+                    <div class="data__item-main">
+                      <div class="data__element data__element--num">
+                        №
+                      </div>
+                      <div class="data__element data__element--name">
+                        ФИО:
+                      </div>
+                      <div class="data__element data__element--email">
+                        Основной email:
+                      </div>
+                      <div class="data__element data__element--emailAlt">
+                        Альтернативный email:
+                      </div>
+                      <div class="data__element data__element--quantity">
+                        Отправленных писем
+                      </div>
+                      <div class="data__element data__element--deactivate">
+                        Деактивировать
+                      </div>
+                    </div>
+                    <div class="data__item">
+                      <div class="data__element data__element--num">
+                        1
+                      </div>
+                      <div class="data__element data__element--name">
+                        Фролова Ульяна Даниловна
+                      </div>
+                      <div class="data__element data__element--email">
+                        fdanilovna@yandex.ru
+                      </div>
+                      <div class="data__element data__element--emailAlt">
+                        frolova1211@mail.ru
+                      </div>
+                      <div class="data__element data__element--quantity">
+                        4
+                      </div>
+                      <div class="data__element data__element--deactivate">
+                        <a class="data__element--deactivate-deact" href="#">Деактивировать</a>
+                      </div>
+                    </div>
+                    <div class="data__item">
+                      <div class="data__element data__element--num">
+                        2
+                      </div>
+                      <div class="data__element data__element--name">
+                        Гущина Мария Владимировна
+                      </div>
+                      <div class="data__element data__element--email">
+                        mariya051088@yandex.ru
+                      </div>
+                      <div class="data__element data__element--emailAlt">
+                        guschinamariya@mail.ru
+                      </div>
+                      <div class="data__element data__element--quantity">
+                        0
+                      </div>
+                      <div class="data__element data__element--deactivate">
+                        <a class="data__element--deactivate-deact" href="#">Деактивировать</a>
+                      </div>
+                    </div>
+                    <div class="data__item">
+                      <div class="data__element data__element--num">
+                        3
+                      </div>
+                      <div class="data__element data__element--name">
+                        Селиванов Алексей Даниилович
+                      </div>
+                      <div class="data__element data__element--email">
+                        selivanov1212@yandex.ru
+                      </div>
+                      <div class="data__element data__element--emailAlt">
+                        alekseydaniilovich@mail.ru
+                      </div>
+                      <div class="data__element data__element--quantity">
+                        24
+                      </div>
+                      <div class="data__element data__element--deactivate">
+                        <a class="data__element--deactivate-act" href="#" data-popup-name="popup-edit">Редактировать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div>
+        <section id="popup-addAnAmbassador" class="popup">
+                <div class="popup__container">
+                    <div class="popup__content">
+                        <div class="popup__close">
+                            <svg class="popup__close-icon" width="29" height="29">
+                              <path class="popup__close-icon" d="M1.15511 24.4881L11.6434 13.9998L1.15511 3.51148C0.851513 3.19714 0.683521 2.77614 0.687319 2.33914C0.691116 1.90215 0.866398 1.48413 1.17541 1.17511C1.48443 0.866099 1.90245 0.690817 2.33944 0.687019C2.77643 0.683222 3.19744 0.851213 3.51178 1.15481L14.0001 11.6431L24.4884 1.15481C24.6422 0.995626 24.8261 0.868656 25.0294 0.781308C25.2328 0.693959 25.4515 0.647982 25.6728 0.646059C25.8941 0.644136 26.1135 0.686305 26.3184 0.770107C26.5232 0.853908 26.7093 0.977663 26.8658 1.13415C27.0223 1.29064 27.146 1.47673 27.2298 1.68155C27.3136 1.88638 27.3558 2.10585 27.3539 2.32715C27.3519 2.54844 27.306 2.76714 27.2186 2.97048C27.1313 3.17382 27.0043 3.35773 26.8451 3.51148L16.3568 13.9998L26.8451 24.4881C27.0043 24.6419 27.1313 24.8258 27.2186 25.0291C27.306 25.2325 27.3519 25.4512 27.3539 25.6725C27.3558 25.8938 27.3136 26.1132 27.2298 26.3181C27.146 26.5229 27.0223 26.709 26.8658 26.8655C26.7093 27.022 26.5232 27.1457 26.3184 27.2295C26.1135 27.3133 25.8941 27.3555 25.6728 27.3536C25.4515 27.3516 25.2328 27.3057 25.0294 27.2183C24.8261 27.131 24.6422 27.004 24.4884 26.8448L14.0001 16.3565L3.51178 26.8448C3.19744 27.1484 2.77643 27.3164 2.33944 27.3126C1.90245 27.3088 1.48443 27.1335 1.17541 26.8245C0.866398 26.5155 0.691116 26.0975 0.687319 25.6605C0.683521 25.2235 0.851513 24.8025 1.15511 24.4881Z" fill="#21A038"/>
+                            </svg>
+                        </div>
+                        <div class="popup__title">
+                            Добавить амбассадора
+                        </div>
+                        <form class="popup__form" action="#" method="post">
+                          <div class="cell">
+                            <label for="fio" class="cell__name">ФИО</label>
+                            <div class="cell__data">
+                              <input id="fio" type="text" class="cell-input cell-input--text" name="fio" placeholder="Укажите ФИО амбассадора" tabindex="0">
+                            </div>
+                            <div class="cell__error-message">Заполните поле</div>
+                          </div>
+                          <div class="popup__cells">
+                            <div class="cell popup__cells--input">
+                                <label for="email" class="cell__name">Основной Email</label>
+                                <div class="cell__data">
+                                    <input id="email" type="text" class="cell-input cell-input--email" name="email" placeholder="__________@______" data-type="email" tabindex="0">
+                                </div>
+                                <div class="cell__error-message">Заполните поле</div>
+                            </div>
+                            <div class="cell popup__cells--input">
+                                <label for="altEmail" class="cell__name">Альтернативный Email</label>
+                                <div class="cell__data">
+                                    <input id="altEmail" type="text" class="cell-input cell-input--email " name="email" placeholder="__________@______" data-type="email" tabindex="0">
+                                </div>
+                                <div class="cell__error-message">Заполните поле</div>
+                            </div>
+                          </div>
+                          <div class="popup__buttons">
+                            <a href="#" class="button button--white popup__buttons--button">Отмена</a>
+                            <a href="#" class="button button--add popup__buttons--button">Добавить</a>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="popup-edit" class="popup">
+                    <div class="popup__container">
+                        <div class="popup__content">
+                            <div class="popup__close">
+                                <svg class="popup__close-icon" width="29" height="29">
+                                  <path class="popup__close-icon" d="M1.15511 24.4881L11.6434 13.9998L1.15511 3.51148C0.851513 3.19714 0.683521 2.77614 0.687319 2.33914C0.691116 1.90215 0.866398 1.48413 1.17541 1.17511C1.48443 0.866099 1.90245 0.690817 2.33944 0.687019C2.77643 0.683222 3.19744 0.851213 3.51178 1.15481L14.0001 11.6431L24.4884 1.15481C24.6422 0.995626 24.8261 0.868656 25.0294 0.781308C25.2328 0.693959 25.4515 0.647982 25.6728 0.646059C25.8941 0.644136 26.1135 0.686305 26.3184 0.770107C26.5232 0.853908 26.7093 0.977663 26.8658 1.13415C27.0223 1.29064 27.146 1.47673 27.2298 1.68155C27.3136 1.88638 27.3558 2.10585 27.3539 2.32715C27.3519 2.54844 27.306 2.76714 27.2186 2.97048C27.1313 3.17382 27.0043 3.35773 26.8451 3.51148L16.3568 13.9998L26.8451 24.4881C27.0043 24.6419 27.1313 24.8258 27.2186 25.0291C27.306 25.2325 27.3519 25.4512 27.3539 25.6725C27.3558 25.8938 27.3136 26.1132 27.2298 26.3181C27.146 26.5229 27.0223 26.709 26.8658 26.8655C26.7093 27.022 26.5232 27.1457 26.3184 27.2295C26.1135 27.3133 25.8941 27.3555 25.6728 27.3536C25.4515 27.3516 25.2328 27.3057 25.0294 27.2183C24.8261 27.131 24.6422 27.004 24.4884 26.8448L14.0001 16.3565L3.51178 26.8448C3.19744 27.1484 2.77643 27.3164 2.33944 27.3126C1.90245 27.3088 1.48443 27.1335 1.17541 26.8245C0.866398 26.5155 0.691116 26.0975 0.687319 25.6605C0.683521 25.2235 0.851513 24.8025 1.15511 24.4881Z" fill="#21A038"/>
+                                </svg>
+                            </div>
+                            <div class="popup__title">
+                                Редактировать
+                            </div>
+                            <form class="popup__form" action="#" method="post">
+                              <div class="cell">
+                                <label for="fio" class="cell__name">ФИО</label>
+                                <div class="cell__data">
+                                  <input id="fio" type="text" class="cell-input cell-input--text" name="fio" placeholder="Укажите ФИО амбассадора" tabindex="0">
+                                </div>
+                                <div class="cell__error-message">Заполните поле</div>
+                              </div>
+                              <div class="popup__cells">
+                                <div class="cell popup__cells--input">
+                                    <label for="email" class="cell__name">Основной Email</label>
+                                    <div class="cell__data">
+                                        <input id="email" type="text" class="cell-input cell-input--email" name="email" placeholder="__________@______" data-type="email" tabindex="0">
+                                    </div>
+                                    <div class="cell__error-message">Заполните поле</div>
+                                </div>
+                                <div class="cell popup__cells--input">
+                                    <label for="altEmail" class="cell__name">Альтернативный Email</label>
+                                    <div class="cell__data">
+                                        <input id="altEmail" type="text" class="cell-input cell-input--email " name="email" placeholder="__________@______" data-type="email" tabindex="0">
+                                    </div>
+                                    <div class="cell__error-message">Заполните поле</div>
+                                </div>
+                              </div>
+                              <div class="popup__buttons">
+                                <a href="#" class="button button--white popup__buttons--button">Отмена</a>
+                                <a href="#" class="button button--add popup__buttons--button">Добавить</a>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+      </div>
+  </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
